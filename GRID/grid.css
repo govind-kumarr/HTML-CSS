@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.grid-container {
+  display: grid;
+  /*! Grid Container Properties  */
+  grid-template-rows: repeat(3, 20rem);
+  grid-template-columns: repeat(4, 25rem);
+
+  /* Grid Column gap  */
+  /* column-gap: 10vw; */
+
+  /* Grid Column gap  */
+  /* row-gap: 5vh; */
+
+  /* Grid Gap shorthand for grid row gap and grid column gap */
+  gap: 2.5rem;
+}
+
+.grid-item {
+  background-color: orange;
+  border: 1px solid #000;
+}
+
+.product_contaienr {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border: 1px solid red;
+}
+.item {
+  height: 100vh;
+  border: 1px solid #000;
+}

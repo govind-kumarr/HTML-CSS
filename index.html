@@ -70,12 +70,18 @@
     <!-- table tag -->
     <!-- tr to create table row  -->
     <!-- td to create table columns  -->
+    <!-- caption tag  -->
     <table border="1">
-      <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
+      <caption>
+        Table Example
+      </caption>
+      <thead>
+        <tr>
+          <th>C1</th>
+          <th>C2</th>
+          <th>C3</th>
+        </tr>
+      </thead>
       <tr>
         <td>Row 1 Column 1</td>
         <td>Row 1 Column 2</td>
@@ -92,5 +98,187 @@
         <td>Row 3 Column 3</td>
       </tr>
     </table>
+
+    <!-- div and span  -->
+
+    <!-- <div></div>  Block Element -> A block-level element always starts on a new line and takes up the full width available(stretches out to the left and right as far as it can)-->
+
+    <!-- <span></span> Inline Element An inline element does not start on a new line and only takes up as much width as necesssary-->
+    <!-- <div style="border: 1px solid red">random text</div>
+    <span style="border: 1px solid rgb(89, 151, 8)">random text</span>
+    <span>random text</span>
+
+    <iframe src="https://www.ndtv.com/" width="100%" height="500"></iframe> -->
+
+    <!-- <audio controls>
+      <source
+        src="./audio/Afreen Afreen Feat Love Me Like You Do Remix_ Spinsun _ O2 _ Srk(MP3_160K)_1.mp3"
+        type="audio/mp3"
+      />
+    </audio> -->
+    <!-- <audio controls>
+      <source
+        src="./audio/Afreen Afreen Feat Love Me Like You Do Remix_ Spinsun _ O2 _ Srk(MP3_160K)_1.mp3"
+        type="audio/mpeg"
+      />
+    </audio> -->
+    <!-- <video autoplay>
+      <source src="./videos/----(480P).mp4" type="video/mp4" />
+    </video> -->
+
+    <!-- how to embed pdf  -->
+    <!-- embed  -->
+    <!-- <embed
+      src="./pdfs/Govind-Kumar-Resume.pdf"
+      type="application/pdf"
+      width="50%"
+      height="1000"
+    /> -->
+    <!-- iframe  -->
+    <!-- <iframe
+      src="./pdfs/Govind-Kumar-Resume.pdf"
+      width="800"
+      height="800"
+    ></iframe> -->
+    <!-- object  -->
+    <!-- <object
+      data="./pdfs/Govind-Kumar-Resume.pdf"
+      width="500"
+      height="500"
+      type="application/pdf"
+    ></object> -->
+
+    <!-- how to embed google map  -->
+    <!-- <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13551.655888018611!2d76.20589006977539!3d31.881755800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b3970c005823f%3A0x5eebb5903b1d012!2sDehra%20Gopipur%2C%20Himachal%20Pradesh%20177101!5e0!3m2!1sen!2sin!4v1673800484512!5m2!1sen!2sin"
+      width="800"
+      height="600"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe> -->
+
+    <!-- HTML entites  -->
+    <!-- name  -->
+    &lt;div&gt;
+    <p>Hello world</p>
+    <!-- number  -->
+
+    <!-- html symbols -->
+    &copy; &#8508;
+
+    <!-- emoji symbols  -->
+
+    <!-- semantic elements  -->
+    <!-- form table article  -->
+    <!-- new semantic elements -->
+    <!-- article aside
+    <details></details>
+    <main></main>
+    <section></section>
+    <nav></nav>
+    <header></header> -->
+
+    <!-- HTML Image map  -->
+    <!-- HTML image map generator https://imagemap.org/ -->
+    <!-- <a href="https://www.amazon.com" target="blank"
+      ><img src="./images/govind-kumar.jpg" alt="amazon"
+    /></a> -->
+    <!-- <img src="./images/govind-kumar.jpg" alt="map" usemap="#workplace" />
+    <map name="workspace">
+      <area shape="rect" coords="" href="" alt="" />
+    </map> -->
+
+    <!-- form  -->
+    <form method="POST" action="" enctype="multipart/form-data">
+      <div>
+        Name:
+        <input type="text" />
+      </div>
+      <br />
+      <div>
+        Date:
+        <input type="date" />
+      </div>
+      <br />
+      <div>
+        Email:
+        <input type="email" />
+      </div>
+      <br />
+      <div>
+        Hidden:
+        <input type="hidden" value="gk4051668@gmail.com" />
+      </div>
+      <br />
+      <div>
+        Number:
+        <input type="number" value="" />
+      </div>
+      <br />
+      <div>
+        Password:
+        <input type="password" value="" />
+      </div>
+      <br />
+      <div>
+        Time:
+        <input type="time" value="" />
+      </div>
+      <br />
+      <div>
+        URl:
+        <input type="url" value="" />
+      </div>
+      <br />
+      <div>
+        Range:
+        <input type="range" min="0" max="50000" />
+      </div>
+      <br />
+      <div>
+        Reset Button:
+        <input type="reset" value="" />
+      </div>
+      <br />
+      <div>
+        file:
+        <input type="file" multiple />
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="submit form" />
+      </div>
+    </form>
+    <!-- form input types  -->
+    <!-- form input attributes  -->
+    <input type="text" value="Go" /> value attribute
+    <br />
+    <input type="text" disabled /> disable <br />
+    <input type="text" size="50" /> size attribute <br />
+    <input type="text" maxlength="3" size="10" /> maxlength attribute <br />
+    <input type="number" min="10" max="100" /> min and max attribute <br />
+    <input type="text" placeholder="Enter Name" /> placeholder attribute <br />
+    <input type="text" required /> required attributebr <br />
+    <input type="number" step="100" /> step attribute <br />
+    <input type="text" autofocus /> <br />
+    <textarea name="" id="" cols="30" rows="10"></textarea><br />
+    <select size="3" multiple>
+      <optgroup label="car">
+        <option value="bmw">BMW</option>
+        <option value="mercedes">MERCEDES</option>
+        <option value="audi">audi</option>
+      </optgroup>
+      <optgroup label="SUV">
+        <option value="thar">Thar</option>
+      </optgroup>
+    </select>
+    <br />
+    <form action="">
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female
+      <input type="radio" name="gender" value="other" /> Other 
+    </form>
   </body>
 </html>
