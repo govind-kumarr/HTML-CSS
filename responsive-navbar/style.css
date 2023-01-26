@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header styles  */
+.header {
+  background: url("../images/pexels-nikolaj-erema-297984.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 1.5;
+  position: relative;
+}
+
+/* navbar styles  */
+.nav {
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.nav > h1 {
+  cursor: pointer;
+}
+
+.hamburger_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  border: 1.5px solid white;
+}
+
+.greeeting_container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: capitalize;
+}
+.greeting_center {
+}
+.greeting_text1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+}
+.greeting_text2 {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  text-transform: capitalize;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn1 {
+  border: 1px solid rgb(232, 104, 126);
+  background-color: #df2033;
+}
+.btn2 {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.greeting_btns {
+  margin-top: 2rem;
+}
+
+.section_work {
+  height: 80vh;
+  /* border: 1px solid #000; */
+  padding: 2rem 0rem;
+}
+.section_work_center {
+  margin: auto;
+  max-width: 800px;
+  /* border: 1px solid red; */
+  height: 100%;
+}
+.work_images {
+  width: 100%;
+  height: 80%;
+  /* border: 1px solid grey; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin: 10px auto;
+}
+.work_image {
+  /* border: 1px solid blue; */
+  border-radius: 5px;
+}
+.work_image1 {
+  grid-column: 1 / span 2;
+  background: url("../images/interiors/pexels-terje-sollie-298842.jpg");
+  background-size: cover;
+}
+.work_image2 {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+  /* border: 1px solid red; */
+  background: url("../images/interiors/pexels-pixabay-275484.jpg");
+  background-size: cover;
+}
+.work_image3 {
+  background: url("../images/interiors/pexels-pixabay-271816.jpg");
+  background-size: cover;
+}
+.work_image4 {
+  background: url("../images/interiors/pexels-valeria-boltneva-1129413.jpg");
+  background-size: cover;
+}
+
+.work_heading {
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+}
+.work_heading1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: gold;
+}
+.work_heading2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.section_aptment {
+  background: #f3f4f7;
+  height: 80vh;
+  padding: 16px 0px;
+}
+.section_aptment_images {
+  height: 90%;
+  display: flex;
+}
+.aptment_heading {
+  display: block;
+  text-transform: uppercase;
+  font-size: 26px;
+  text-align: center;
+}
+
+.aptment_box {
+  width: 25%;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+
+.aptment_img {
+  width: 100%;
+  height: 50%;
+}
+.aptment_desc {
+  width: 100%;
+  height: 50%;
+}
+.section_aptment_images {
+}
+
+.img1 {
+  background: url("../images/apartments/pexels-chait-goli-1918291.jpg");
+  background-size: cover;
+}
+.desc_heading {
+  font-weight: bold;
+  font-size: 26px;
+}
+/* styles for medium screens  */
+@media (max-width: 900px) {
+  .greeeting_container {
+    width: 90%;
+    top: 50%;
+  }
+}
+
+/* styles for small screens  */
+@media (max-width: 480px) {
+  .greeeting_container {
+    width: 90%;
+    top: 50%;
+  }
+  .greeting_text1 {
+    font-size: 26px;
+  }
+  .btn {
+    margin: 0.7rem 0px;
+    width: 100%;
+  }
+}

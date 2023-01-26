@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding Transforms</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        font-size: 1.5rem;
+        background: rgb(98, 209, 246);
+        margin: 100px auto;
+        /* rotate skew scale translate  */
+        transition: transform 1s ease-in-out;
+      }
+      .box:hover {
+        transform: rotate(360deg);
+      }
+      .desc_box {
+        background: red;
+        display: inline-block;
+        transform: scaleY(0.1);
+        transition: all 1s ease-in-out;
+      }
+      .desc_box:hover {
+        transform: scaleY(1);
+        transform: translateX(100px);
+        transition: all 1s ease-in-out;
+      }
+      .menu_container {
+        text-align: center;
+        border: 1px solid red;
+        position: relative;
+      }
+      .drop_down {
+        border: 1px solid #000;
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+      }
+      .filter_box {
+        font-size: 36px;
+        display: inline-block;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Hello World</div>
+    <div class="desc_box">
+      <h3>hover me</h3>
+      <p>data1</p>
+      <p>data2</p>
+      <p>data3</p>
+      <p>data4</p>
+      <p>data5</p>
+    </div>
+    <div class="menu_container">
+      <h1 class="menu_heading">menu</h1>
+      <div class="drop_down menu">
+        <p class="option option1">option-1</p>
+        <p class="option option2">option-2</p>
+        <p class="option option3">option-3</p>
+        <p class="option option4">option-4</p>
+        <p class="option option5">option-5</p>
+        <p class="option option6">option-6</p>
+        <p class="option option7">option-7</p>
+        <p class="option option8">option-8</p>
+        <p class="option option9">option-9</p>
+        <p class="option option10">option-10</p>
+      </div>
+    </div>
+    <div class="filter_box">
+      <span class="filter"> filters </span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-size: 62.5%; */
+}
+
+header {
+  min-height: 50vh;
+  background: url("./backgroundImg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav_container,
+.container {
+  max-width: 900px;
+  margin: auto;
+  width: 90%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 8vh;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn_headline {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.section_todo {
+  margin-top: 5rem;
+  text-align: center;
+}
+.form_todo {
+  /* border: 2px solid red; */
+  min-height: 5vh;
+  display: flex;
+  max-width: 900px;
+  margin: 2rem auto;
+  justify-content: space-between;
+}
+.form_todo input {
+  min-height: 100%;
+  margin: 0px auto;
+}
+
+.form_todo input[type="text"] {
+  width: 78%;
+  padding: 0px 10px;
+  font-weight: 500;
+}
+.form_todo input[type="submit"] {
+  width: 20%;
+  border: none;
+  cursor: pointer;
+  background: #5b616f;
+  color: white;
+}
+
+.section_signup {
+  text-align: center;
+  background: #e6d5d5;
+  padding: 1rem;
+}
+.form_signup {
+  margin: 1rem 0px;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  text-transform: capitalize;
+}
+.form_signup label {
+  display: block;
+}
+.form_signup input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+.submit_btn {
+  background: #575f73;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  margin: 10px auto;
+  display: block;
+}

@@ -13,15 +13,44 @@ html {
   grid-template-columns: repeat(4, 25rem);
 
   /* Grid Column gap  */
-  /* column-gap: 10vw; */
+  column-gap: 10vw;
 
   /* Grid Column gap  */
   /* row-gap: 5vh; */
 
   /* Grid Gap shorthand for grid row gap and grid column gap */
   gap: 2.5rem;
+
+  /* justify-items: stretch;
+  justify-items: start;
+  justify-items: end;
+  justify-items: center; */
+
+  /* align-items: stretch;
+  align-items: start;
+  align-items: end;
+  align-items: center; */
+  /* place-items: alignitems justify-items; */
+
+  /* justify-content: ;
+  align-content: ;
+  place-content: ; */
 }
 
+.item-1 {
+  /* changing rows  */
+  /* grid-row-start: 2;
+  grid-row-end: 3;
+  grid-row: 2/3; shorthand */
+  grid-column: 1/5;
+  /* changing cols  */
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-column: 2/3; shorthand */
+
+  /* shorthand for grid row and row column  */
+  /* grid-area: 3/2/4/3; */
+}
 .grid-item {
   background-color: orange;
   border: 1px solid #000;
@@ -35,4 +64,48 @@ html {
 .item {
   height: 100vh;
   border: 1px solid #000;
+}
+
+/** calculator styles*/
+
+.calc_container {
+  width: 40rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  gap: 2rem;
+  padding: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 5rem auto;
+  font-family: sans-serif;
+}
+
+.display {
+  grid-column: 1/-1;
+  height: 6rem;
+  /* border: 1px solid red; */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 0.6rem;
+}
+
+.btn {
+  /* border: 1px solid #000; */
+  font-size: 2.6rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.black {
+  background: black;
+  color: white;
+}
+
+.red {
+  background: red;
+  color: white;
 }
