@@ -1,0 +1,47 @@
+.table_vaccine {
+  max-width: 90%;
+  width: 1000px;
+  margin: auto;
+  border: 1px solid #645cbb;
+  border-collapse: collapse;
+}
+.t_headings {
+  border: 1px solid white;
+  background: #645cbb;
+  color: white;
+  font-size: 1.8rem;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.th_name {
+  width: 30%;
+}
+/* table body styles  */
+tbody tr td {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+  background: #bface2;
+  color: white;
+  border: 1px solid #645cbb;
+  padding: 0.7rem 1rem;
+}
+
+.vaccinate_btn {
+  font-weight: bold;
+  background: #a084dc;
+  color: white;
+  padding: 0.3rem 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 1px solid #ebc7e6;
+}
+.delete_btn {
+  font-weight: bold;
+  background: #d01010;
+  color: white;
+  padding: 0.3rem 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 1px solid #ebc7e6;
+}

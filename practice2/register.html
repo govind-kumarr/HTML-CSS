@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <script src="./scripts/register.js" defer></script>
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <!-- navbar  -->
+      <nav class="nav">
+        <!-- Hamburger menu button  -->
+        <div class="hamburger_menu">
+          <!-- lines  -->
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <!-- nav items  -->
+        <ul class="nav_items">
+          <li class="nav_item nav_item1">
+            <a href="./register.html" class="link active_link">register</a>
+          </li>
+          <li class="nav_item nav_item2">
+            <a href="./dashboard.html" class="link active_link">dashboard</a>
+          </li>
+          <li class="nav_item nav_item3">
+            <a href="./vaccinated.html" class="link active_link">vaccinated</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- body/form section  -->
+    <section class="section_form">
+      <h1 class="form_title">Vaccination Form</h1>
+      <form class="form_vaccine">
+        <div class="form_field">
+          <label for="uniqueId">unique id</label>
+          <input type="text" id="uniqueId" name="uniqueId" class="input_text" />
+        </div>
+        <div class="form_field">
+          <label for="name">name</label>
+          <input type="text" id="name" name="name" class="input_text" />
+        </div>
+        <div class="form_field">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" class="input_num" />
+        </div>
+        <div class="form_field">
+          <p>designation</p>
+          <div class="designation">
+            <label for="designation">Employee</label>
+            <input
+              type="radio"
+              id="d1"
+              value="employee"
+              name="designation"
+              class="input_radio"
+            />
+            <label for="designation">Student</label>
+            <input
+              type="radio"
+              id="d2"
+              value="student"
+              name="designation"
+              class="input_radio"
+            />
+          </div>
+        </div>
+        <div class="form_field">
+          <label for="vaccine">vaccine</label>
+          <select name="vaccine" id="vaccine_type">
+            <option value="">Select Vaccine</option>
+            <option value="covishield">covishield</option>
+            <option value="covaxin">covaxin</option>
+            <option value="sputnik">sputnik</option>
+          </select>
+        </div>
+        <button class="btn submit_btn" type="submit">submit</button>
+      </form>
+    </section>
+  </body>
+</html>

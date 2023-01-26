@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <script src="./scripts/dashboard.js" defer></script>
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <!-- navbar  -->
+      <nav class="nav">
+        <!-- Hamburger menu button  -->
+        <div class="hamburger_menu">
+          <!-- lines  -->
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <!-- nav items  -->
+        <ul class="nav_items">
+          <li class="nav_item nav_item1">
+            <a href="./register.html" class="link active_link">register</a>
+          </li>
+          <li class="nav_item nav_item2">
+            <a href="./dashboard.html" class="link active_link">dashboard</a>
+          </li>
+          <li class="nav_item nav_item3">
+            <a href="./vaccinated.html" class="link active_link">vaccinated</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- data table  -->
+
+    <table class="table_vaccine">
+      <thead class="table_head">
+        <tr class="head_row">
+          <th class="t_headings">uniqueId</th>
+          <th class="t_headings th_name">name</th>
+          <th class="t_headings">age</th>
+          <th class="t_headings">designation</th>
+          <th class="t_headings">vaccine</th>
+          <th class="t_headings">otp</th>
+          <th class="t_headings t_btns">
+            <!-- <button class="btn vaccinate_btn">vaccinate</button> -->
+          </th>
+          <th class="t_headings t_btns">
+            <!-- <button class="btn delete_btn">delete</button> -->
+          </th>
+        </tr>
+      </thead>
+      <tbody class="table_body"></tbody>
+    </table>
+  </body>
+</html>
