@@ -1,0 +1,129 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #645cbb;
+  --second-color: #d01010;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  overflow: hidden;
+}
+
+/*! Main Styles  */
+.nav {
+  height: 5rem;
+  background: var(--main-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+.nav_links {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  list-style-type: none;
+}
+.nav_links li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding: 0.5rem;
+}
+.nav_links li {
+  margin-right: 4rem;
+}
+
+.nav_links li a::before,
+.nav_links li a:active::before,
+.nav_links li a:active::after,
+.nav_links li a::after {
+  content: "";
+  width: 100%;
+  height: 0.25rem;
+  position: absolute;
+  background: white;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+}
+.nav_links li a::before {
+  top: 0;
+  transform-origin: left;
+}
+.nav_links li a::after {
+  bottom: 0;
+  transform-origin: right;
+}
+.nav_links li a:hover::before,
+.nav_links li a:active::before,
+.nav_links li a:active::after,
+.nav_links li a:hover::after {
+  transform: scale(1);
+}
+
+.line1 {
+  transform-origin: 0% 0%;
+}
+.line3 {
+  transform-origin: 0% 100%;
+}
+.line1_rotate {
+  transform: rotate(45deg);
+}
+.line2_hide {
+  opacity: 0;
+}
+.line3_rotate {
+  transform: rotate(-45deg);
+}
+.line {
+  width: 100%;
+  height: 0.25rem;
+  background: white;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .hamburger {
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--main-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+  .nav {
+    height: 100vh;
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    right: -50vw;
+    transition: all 1s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .show_nav {
+    right: 0;
+  }
+  .nav_links {
+    flex-direction: column;
+    gap: 2rem;
+    align-content: center;
+  }
+}

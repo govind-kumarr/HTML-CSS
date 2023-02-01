@@ -6,18 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .webframe {
-        border: none;
+      div.product_container {
+        width: 90%;
+        height: 70vh;
+        border: 1px solid #000;
+        margin: auto;
+        display: flex;
+      }
+      div.product_container > div {
+        width: 100%;
+        height: 100%;
+      }
+      .img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid red;
       }
     </style>
   </head>
   <body>
-    <iframe
-      src="https://www.ndtv.com/"
-      width="100%"
-      height="900"
-      frameborder="0"
-      class="webframe"
-    ></iframe>
+    <div class="img_slider">
+      <div class="product_container">
+        <div>
+          <img
+            class="img img1"
+            src="./images/interiors/pexels-pixabay-271816.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img img2"
+            src="./images/interiors/pexels-pixabay-275484.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img img3"
+            src="./images/interiors/pexels-terje-sollie-298842.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="img img4"
+            src="./images/interiors/pexels-valeria-boltneva-1129413.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
