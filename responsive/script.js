@@ -10,3 +10,9 @@ hamburger.addEventListener("click", () => {
   line2.classList.toggle("line2_hide");
   line3.classList.toggle("line3_rotate");
 });
+
+const alert_btn = document.querySelector(".btn");
+
+alert_btn.addEventListener("click", () => {
+  
+});
