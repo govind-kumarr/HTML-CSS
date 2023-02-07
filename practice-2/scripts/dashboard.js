@@ -68,3 +68,4 @@ function deleteRow(uniqueId) {
 }
 
 appendData(vaccinationData);
+

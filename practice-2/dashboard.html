@@ -7,7 +7,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/dashboard.css" />
-    <script src="./scripts/dashboard.js" defer></script>
+    <!-- <script src="./scripts/dashboard.js" defer></script> -->
   </head>
   <body>
     <!-- header  -->
@@ -37,7 +37,7 @@
     </header>
     <!-- data table  -->
 
-    <table class="table_vaccine">
+    <!-- <table class="table_vaccine">
       <thead class="table_head">
         <tr class="head_row">
           <th class="t_headings">uniqueId</th>
@@ -46,15 +46,51 @@
           <th class="t_headings">designation</th>
           <th class="t_headings">vaccine</th>
           <th class="t_headings">otp</th>
-          <th class="t_headings t_btns">
-            <!-- <button class="btn vaccinate_btn">vaccinate</button> -->
-          </th>
-          <th class="t_headings t_btns">
-            <!-- <button class="btn delete_btn">delete</button> -->
-          </th>
+          <th class="t_headings t_btns"></th>
+          <th class="t_headings t_btns"></th>
         </tr>
       </thead>
       <tbody class="table_body"></tbody>
-    </table>
+    </table> -->
+
+    <div class="otp_component">
+      <h1>enter the otp</h1>
+      <div class="num_box">
+        <input class="otp_num otp_num1" type="text" maxlength="1" />
+        <input class="otp_num otp_num2" type="text" maxlength="1" />
+        <input class="otp_num otp_num3" type="text" maxlength="1" />
+        <input class="otp_num otp_num4" type="text" maxlength="1" />
+      </div>
+      <button class="btn submit_otp">submit</button>
+    </div>
   </body>
 </html>
+<script>
+  //OTP Component Logic
+  const otpComponent = document.querySelector(".otp_component");
+
+  const inputs = otpComponent.querySelectorAll(".otp_num");
+  let otpSubmit = otpComponent.querySelector(".submit_otp");
+
+  let [box1, box2, box3, box4] = inputs;
+
+  inputs.forEach((inputBox, index) => {
+    inputBox.addEventListener("input", (e) => {
+      if (e.data === null) {
+        e.target.value = "";
+        index > 0 && inputs[index - 1].focus();
+        return;
+      }
+      console.log("input event occured");
+      let valueInput = inputBox.value;
+
+      if (isNaN(valueInput)) {
+        inputBox.value = "";
+      } else {
+        index < 3 && inputs[index + 1].focus();
+      }
+    });
+  });
+
+  otpSubmit.addEventListener("submit", () => {});
+</script>

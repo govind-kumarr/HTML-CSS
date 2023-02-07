@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+html {
+  /* font-size: 62.5%; */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.form_vaccine {
+  max-width: 800px;
+  border: 1px solid #000;
+  margin: auto;
+  padding: 1rem 5rem;
+  /* width: 90%; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  background: #bface2;
+}
+.form_field {
+  border: 1px solid #ebc7e6;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.input_validator {
+  position: absolute;
+  right: 0;
+  transform: translate(+100%, 0);
+}
+
+.form_vaccine .form_field > label,
+.form_vaccine .form_field > p {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.form_vaccine input {
+  padding: 0.5rem;
+}
+
+.designation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.submit_btn {
+  align-self: center;
+  padding: 0.3rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  background: #a084dc;
+  border: 1px solid #645cbb;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.submit_btn:hover {
+  background: #645cbb;
+}
+
+.section_form {
+  /* border: 1px solid #000; */
+  text-align: center;
+}
+.form_title {
+  font-size: 3rem;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  /* border: 1px solid #000; */
+  background: #645cbb;
+}
