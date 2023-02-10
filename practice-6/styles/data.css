@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+  --main-color: #00b8a9;
+  --second-color: #f8f3d4;
+  --third-color: #f6416c;
+  --fourth-color: #ffde7d;
+}
+
+.secondry_nav {
+  max-width: 1200px;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  background: var(--fourth-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondry_nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px 5rem;
+}
+
+.secondry_nav a:hover {
+  text-decoration: underline;
+}
+
+
+.section_display {
+  max-width: 1200px;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  background: var(--fourth-color);
+}
+
+div.dog_container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  position: relative;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dog_card {
+  background: var(--main-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 1rem;
+  text-transform: capitalize;
+  color: white;
+
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.dog_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.dog_name {
+  font-weight: bold;
+}
+
+.dog_img {
+  width: 90%;
+}
+
+.delete_dog {
+  position: absolute;
+  top: 5%;
+  right: 13%;
+  cursor: pointer;
+}
+
+.edit_dog {
+  position: absolute;
+  top: 10%;
+  right: 13%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+
+/* 
+*delete modal styles
+*/
+
+.delete_modal {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--main-color);
+  background: var(--main-color);
+
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  text-align: center;
+  color: var(--third-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.show_delete_modal {
+  top: 20%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.blur_body {
+  opacity: 0.6;
+}
+
+/* edit modal css  */
+.edit_modal {
+  position: fixed;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  transition: all 0.3s ease-in-out;
+}
+
+.show_edit_modal {
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.section_form {
+  max-width: 1200px;
+  padding: 1rem;
+  border: 3px solid var(--fourth-color);
+  background: var(--third-color);
+  margin: auto;
+}
+
+.section_form h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form {
+  max-width: 1000px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form_field {
+  text-transform: capitalize;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  width: 300px;
+}
+
+.form_field input {
+  padding: 0.2rem 0.3rem;
+}
+
+.form button {
+  padding: 0.2rem 1rem;
+  text-transform: uppercase;
+  background: var(--main-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transform: all 0.3s ease-in-out;
+}
+
+.form button:hover {
+  opacity: 0.7;
+}
+
+.filters {
+  max-width: 1200px;
+  margin: auto;
+  background: var(--main-color);
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

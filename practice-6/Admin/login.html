@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/login.css">
+  <script src="../scripts/login.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="main_nav">
+      <span class="admin"><a href="../Admin/login.html">admin</a></span>
+      <span class="user"><a href="../User/registration.html">user</a></span>
+    </nav>
+  </header>
+  <nav class="secondry_nav">
+    <span class="link_container"><a href="./login.html" class="link">login</a></span>
+    <span class="link_container"><a href="./data.html" class="link">data</a></span>
+    <span class="link_container"><a href="./reports.html" class="link">reports</a></span>
+  </nav>
+  <section class="section_form">
+    <h1 class="form_heading">login form</h1>
+    <form class="form">
+      <div class="form_field">
+        <label for="email">enter email</label>
+        <input type="text" placeholder="eve.holt@reqres.in" id="email">
+      </div>
+      <div class="form_field">
+        <label for="password">enter password</label>
+        <input type="password" id="password">
+      </div>
+      <button class="btn login" type="submit">login</button>
+    </form>
+  </section>
+</body>
+
+</html>

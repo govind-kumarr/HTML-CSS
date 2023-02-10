@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Page</title>
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/data.css">
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/data.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="main_nav">
+      <span class="admin"><a href="../Admin/login.html">admin</a></span>
+      <span class="user"><a href="../User/registration.html">user</a></span>
+    </nav>
+  </header>
+  <nav class="secondry_nav">
+    <span class="link_container"><a href="./login.html" class="link">login</a></span>
+    <span class="link_container"><a href="./data.html" class="link">data</a></span>
+    <span class="link_container"><a href="./reports.html" class="link">reports</a></span>
+  </nav>
+
+  <section class="filters">
+    <div class="search_box">
+      <input type="text" class="search_dog_name">
+      <button class="btn search_dog">search dog</button>
+    </div>
+    <div class="sort">
+      <select name="sortByAge" id="sortByAge">
+        <option value="">select sort</option>
+        <option value="asc">sort in ascending</option>
+        <option value="dsc">sort in descending</option>
+      </select>
+    </div>
+    <div class="filter">
+      <select name="filterByGender" id="filterByGender">
+        <option value="">select gender</option>
+        <option value="Male">male</option>
+        <option value="Female">female</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="section_display">
+    <div class="dog_container">
+      <h1 class="loader">Data is loading please wait...</h1>
+    </div>
+  </section>
+  <div class="delete_modal">
+    <h1>Delete is in Progress...</h1>
+  </div>
+  <div class="edit_modal">
+    <section class="section_form">
+      <form class="form">
+        <div class="form_field">
+          <label for="name">name of the breed</label>
+          <input id="name" name="name" type="text">
+        </div>
+        <div class="form_field">
+          <label for="age">age</label>
+          <input id="age" name="age" type="number">
+        </div>
+        <div class="form_field">
+          <label for="gender">gender</label>
+          <select name="gender" id="gender">
+            <option value="Male">male</option>
+            <option value="Female">female</option>
+            <option value="other">others</option>
+          </select>
+        </div>
+        <div class="form_field">
+          <label for="place">place</label>
+          <input id="place" name="place" type="text">
+        </div>
+        <button class="btn submit">submit</button>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>
