@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      div.product_container {
-        width: 90%;
-        height: 70vh;
-        border: 1px solid #000;
-        margin: auto;
-        display: flex;
-      }
-      div.product_container > div {
-        width: 100%;
-        height: 100%;
-      }
-      .img {
-        width: 100%;
-        height: 100%;
-        border: 1px solid red;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="img_slider">
-      <div class="product_container">
-        <div>
-          <img
-            class="img img1"
-            src="./images/interiors/pexels-pixabay-271816.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="img img2"
-            src="./images/interiors/pexels-pixabay-275484.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="img img3"
-            src="./images/interiors/pexels-terje-sollie-298842.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="img img4"
-            src="./images/interiors/pexels-valeria-boltneva-1129413.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    div.product_container {
+      width: 90%;
+      height: 70vh;
+      border: 1px solid #000;
+      margin: auto;
+      display: flex;
+    }
+
+    div.product_container>div {
+      width: 100%;
+      height: 100%;
+    }
+
+    .img {
+      width: 100%;
+      height: 100%;
+      border: 1px solid red;
+    }
+
+    #chart {}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <form>
+    <input type="text" id="month" class="inputBox" placeholder="Month">
+    <input type="text" id="attendence" class="inputBox" placeholder="Attendence">
+    <input type="text" id="performace" class="inputBox" placeholder="Performance">
+    <button class="btn addData">add data</button>
+  </form>
+  <canvas id="chart">
+  </canvas>
+</body>
+
 </html>
+<script>
+  const chartBox = document.querySelector("#chart")
+  let chart;
+
+  window.addEventListener("load", () => {
+    chart = new Chart(chartBox, {
+      type: "bar",
+      data: {
+        labels: ['January', 'February', 'April', 'March', 'May', 'June', 'July'],
+        datasets: [{
+          label: "Attendence",
+          data: [100, 45, 60, 78, 34, 67, 65],
+          backgroundColor: colorGenerator()
+        }, {
+          label: "Performance",
+          data: [95, 40, 40, 60, 30, 50, 50],
+          backgroundColor: colorGenerator()
+        }
+        ], borderWidth: 1
+      }
+    })
+  })
+
+  //getting the inputs
+  const form = document.querySelector('form');
+  const monthField = form.querySelector("#month")
+  const attendenceField = form.querySelector("#attendence")
+  const performaceField = form.querySelector("#performace")
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const month = monthField.value;
+    const attendence = attendenceField.value;
+    const performace = performaceField.value;
+
+    if (!month || !attendence || !performace) return alert("Please fill out all the required fields")
+
+    chart.data.labels.push(month)
+    chart.data.datasets[0].data.push(attendence)
+    chart.data.datasets[1].data.push(performace)
+
+    chart.update();
+    form.reset();
+  })
+
+
+  //adding the data to the chart
+
+
+  // random color generator
+  function colorGenerator() {
+    const red = Math.floor((Math.random() * 256));
+    const blue = Math.floor((Math.random() * 256));
+    const green = Math.floor((Math.random() * 256));
+
+    return `rgb(${red}, ${green}, ${blue})`
+  }
+</script>

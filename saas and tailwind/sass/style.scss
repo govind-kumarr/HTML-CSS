@@ -1,0 +1,49 @@
+/*
+$color-primary: red;
+$color-secondary: #green;
+$color-tertiary: #yellow;
+
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: $color-primary;
+}
+*/
+
+// Maps
+/*
+$colors: (
+  "color-primary": red,
+  "color-secondary": green,
+  "color-tertiary": yellow,
+  );
+  .box1 {
+    width: 100px;
+    height: 100px;
+    background: map-get($colors, color-secondary);
+  }
+*/
+// nesting
+$colors: (
+  "color-primary": red,
+  "color-secondary": green,
+  "color-tertiary": yellow,
+);
+
+.parent_box {
+  .box1 {
+    // width: 100px;
+    // height: 100px;
+    background: map-get($colors, color-secondary);
+
+    &-content {
+      font-size: 20px;
+    }
+  }
+  .box2 {
+    width: 100px;
+    height: 100px;
+    background: map-get($colors, color-tertiary);
+  }
+}

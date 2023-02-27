@@ -1,0 +1,37 @@
+/*
+$color-primary: red;
+$color-secondary: #green;
+$color-tertiary: #yellow;
+
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: $color-primary;
+}
+*/
+/*
+$colors: (
+  "color-primary": red,
+  "color-secondary": green,
+  "color-tertiary": yellow,
+  );
+  .box1 {
+    width: 100px;
+    height: 100px;
+    background: map-get($colors, color-secondary);
+  }
+*/
+.parent_box .box1 {
+  background: green;
+}
+.parent_box .box1-content {
+  font-size: 20px;
+}
+.parent_box .box2 {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

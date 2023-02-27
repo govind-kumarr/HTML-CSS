@@ -56,16 +56,19 @@ a {
   border: none;
   cursor: pointer;
 }
+
 .btn_headline {
   padding: 1rem 2rem;
   font-size: 1rem;
   margin-top: 1rem;
   font-weight: 600;
 }
+
 .section_todo {
   margin-top: 5rem;
   text-align: center;
 }
+
 .form_todo {
   /* border: 2px solid red; */
   min-height: 5vh;
@@ -74,6 +77,7 @@ a {
   margin: 2rem auto;
   justify-content: space-between;
 }
+
 .form_todo input {
   min-height: 100%;
   margin: 0px auto;
@@ -84,6 +88,7 @@ a {
   padding: 0px 10px;
   font-weight: 500;
 }
+
 .form_todo input[type="submit"] {
   width: 20%;
   border: none;
@@ -97,21 +102,26 @@ a {
   background: #e6d5d5;
   padding: 1rem;
 }
+
 .form_signup {
   margin: 1rem 0px;
   max-width: 800px;
   margin: auto;
   text-align: left;
   text-transform: capitalize;
+
 }
+
 .form_signup label {
   display: block;
 }
+
 .form_signup input {
   display: block;
   width: 100%;
   padding: 0.5rem;
 }
+
 .submit_btn {
   background: #575f73;
   padding: 0.5rem 1rem;
@@ -122,5 +132,3 @@ a {
   margin: 10px auto;
   display: block;
 }
-
-
